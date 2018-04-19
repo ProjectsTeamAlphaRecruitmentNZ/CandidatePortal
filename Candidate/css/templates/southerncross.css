@@ -1,0 +1,103 @@
+/* CSS Document */
+
+#header {background: url('file:///C:/Users/annas/Desktop/Candidate%20Portal/FINAL/img/header-southerncross.jpg') no-repeat 50% 19%!important;height: 300px!important;width: 100%;}
+#logo{margin-top: 0!important;height: 9rem!important;margin-left: 3%!important;}
+.container--header{max-width: 100%!important;width: 100%!important;}
+.profile-navigation__progress__bar, .profile-navigation__progress__bar{background-color: #3092cf!important;}
+.percentage {color: #3092cf!important;}
+.profile-navigation__item > a:hover, a:hover{color:#e4a700!important}
+.btn:hover,.add-pos-btn:hover, .add-qual-btn:hover, .add-leave-btn:hover, .add-expenses-btn:hover, #incident-form-btn:hover, #dii-form-btn:hover, .bt:hover{background: #ff6230!important; color:#ffffff!important}
+.color-skills:hover, #submitButton{background-color:#ff6230!important}
+#submitButton:hover{background-color: #3092cf;border:1px solid grey}
+.my-job-title, .t-and-q-title, .referee-title--01{color: #2eb8e9;}
+.row.header,.col-labels{background:#3093cc!important}
+.confirm{background-color:#3092cf!important}
+.header--general-info{background-color: #e5e5e5 !important;}
+.header--general-info h2{color:#6d6e71!important}
+#nav-icon2 span{background: #7ebfe5!important;}
+h6{color:#ffffff!important;}
+#nav--header ul li{margin-top: 1.7rem;}
+
+.radio-input-grid__column > input[type="checkbox"]:checked + label {background-color: #065e91 !important;}
+
+.quick-link a, .text-details, .text-details a, .contact-details a{color:#b0e2fe!important;}
+.quick-link a:hover{text-decoration: underline;}
+.logo_area{height: 100%;overflow: hidden;}
+.copyright{background-color: #3093cc!important;}
+.footer--row{background: #3093cc;margin-top:-1.4rem}
+.text-details{text-align: left!important;}
+
+@media screen and (min-width:600px){
+#nav--header ul{height: 18.6rem!important;margin-top:22.5rem !important;margin-right: 2rem;display: inline;}
+#nav--header ul li a{color: #3093cc !important;margin-top: 3.2rem!important;font-size: 1.4rem!important;text-transform: uppercase!important;letter-spacing: 0.03rem!important;font-weight: 500!important;}
+.subnav-item[aria-selected="true"]::before,.subnav-item1[aria-selected="true"]::before{background-color: #2eb8e9!important;}
+.subnav-item[aria-selected="true"]::before{width: 4.8rem;top: 10rem;margin-left: 0.6rem;}
+.subnav-item1[aria-selected="true"]::before{width: 8.5rem!important;top: 10rem!important;left: 9.5rem!important;}
+	#footer-content{background-color: #3093cc!important;}
+}
+
+
+
+@media screen and (max-width:1000px) and (min-width:600px){
+	#logo{margin-left: 2% !important;}
+	#nav--header ul{margin-right: 1rem;}
+	.m-b22{margin-top: 5rem !important;}
+	.profile-navigation--title {background-color: #3093cc !important;color: #ffffff !important;}
+	.content{width:100%!important;margin-left:0%!important;margin-right:0%!important}
+.form_container, .profile-navigation__nav {width: 86%!important;margin-left:7%!important;margin-right:7%!important}
+}
+
+@media screen and (max-width:600px){
+	.profile-navigation--title{background-color: #3093cc!important;color:#ffffff!important;margin-top: 5rem!important;}
+	.layout__item, .md-3of12{margin-top: -0.2rem!important;}
+	#logo{margin-left: 2% !important;}
+	#footer-content{background-color: #3093cc!important;margin-top: -1.4rem;height: 100%;overflow: hidden;}
+	.copyright{top: 1.4rem;}
+	.site-map{margin-left: 1rem !important;}
+	.profile-navigation__nav{width:100%!important;margin-left:0%!important;margin-right:0%!important}
+	.form_container{margin-top: 6rem!important;}
+	
+}
+
+@media screen and (max-width:400px){
+	#logo{height: 7rem !important;margin-left: 1% !important;}
+}
+
+@media screen and (max-width:500px){
+	.copyright{height: 7.5rem!important;top: 1.4rem!important;}
+	#socket--item-set{left: 3rem !important;}
+	#copyright-text{position: absolute!important;top: 3rem!important;}
+	.col-ftr, .contact-details{margin: 4rem 7.5% 1rem!important;}
+}
+
+@media screen and (max-width:400px){
+#copyright-text{left: 0.2rem!important;}
+#socket--item-set{left: -0.7rem !important;}	
+}
+
+
+/*
+header:
+<img alt="logo" id="logo" src="http://www.alphaonline.co.nz/jobsonline/images/logo-sandriwalsh.png">
+
+
+footer:
+	<div class="contact-details floatLeft col-ftr">
+			<h6 class="center">Contact Us</h6>
+
+
+			<h6 class="sml">Address </h6>
+			<p class="text-details">
+				Level 10, 342 Lambton Quay (thru AMI Plaza)<br>
+				P.O. Box 25-594, Featherston St, Wellington 6146<br>
+				Phone: +64 (0) 4 978 1824<br><br>
+			</p>
+
+		   <h6 class="sml">Technical support</h6>
+		   <p class="text-details">
+			   Email: <a href="mailto:support@alphajobs.co.nz">support@alphajobs.co.nz</a><br>
+			   Phone: (09) 524 2336<br><br>
+		   </p>
+					   
+	</div>
+*/

@@ -1,0 +1,160 @@
+﻿.add {
+    background-color: #2D98F3 !important;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 3rem;
+    width: 25%;
+    text-align: center;
+    transition: ease 0.25s all;   
+    padding-top: 1.3rem;
+    float: left;
+    margin-top:3rem;
+}
+.ui-datepicker {
+
+    z-index: 10000 !important;
+}
+    .add:hover {
+        background-color: #F32D2D !important;
+    }
+.edit {
+    background-color: #2D98F3 !important;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3.5rem;
+    text-align: center;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -40%);
+    transform: translate(50%, -40%);
+    padding-top: 0.6rem;
+    float: right;
+    margin-right: 2rem;
+    
+}
+    .edit:hover {
+        background-color: #F32D2D !important;
+    }
+.remove {
+    background: url('../img/dustbin.svg');
+    background-color: #F32D2D;
+    color: white;
+    cursor: pointer;
+    border-radius: 50% !important;
+    height: 3.6rem;
+    width: 3.6rem;
+    text-align: center;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    padding-top: 0.5rem;
+    float: right;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+    .remove i {
+        margin-top: 0.3rem;
+    }
+.edit i
+{
+    margin-top: 0.3rem;
+    }
+#close-modal
+{
+    margin:0;}
+
+/*skills*/
+.radio-input-grid__column {
+    display: block !important;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+    float: left;
+    max-height: 50px !important;
+    overflow: hidden !important;
+}
+.radio-input-grid__column > input[type="checkbox"] + label {
+    display: block;
+    padding: 1rem 0;
+    cursor: pointer;
+    background-color: #EDF1F5;
+    color: #787985;
+    font-weight: 500;
+}
+.radio-input-grid__column > input[type="checkbox"] + label {
+    line-height: 1.2rem;
+    height: 25px;
+}
+input[type="checkbox"], .radio input {
+    width: auto !important;
+}
+.radio-input-grid__cw-4 {
+    width: 24.6% !important;
+}
+@media screen and (max-width:675px)
+{
+    .radio-input-grid__cw-4 {
+    width: 32.9% !important;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .radio-input-grid__cw-4, .radio-input-grid__cw-3 {
+    width: 32% !important;}
+}
+.radio-input-grid__column {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.radio-input-grid__row {
+    display: block !important;
+}
+.radio-input-grid {
+    border-spacing: 2px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+.cell-info {
+    margin: 2rem auto 4.5rem auto;
+}
+#skillsModalDialog{
+    max-width:600px;
+}
+/*referee*/
+#refereeModalDialog{
+    width:50%;
+}
+@media screen and (max-width:600px) {
+    #refereeModalDialog {
+        
+        width: 100%;
+    }
+        #refereeModalDialog .modal-content, #skillsModalDialog .modal-content, #editPersonalInfo .modal-content {
+            padding: 20px;
+        }
+}
+
+/*H&S*/
+
+/*LEAVE*/
+.radio-input-grid__row table {
+    width:100%;
+}
+
+#declareHead {
+    background-color: #e3e0cf;
+    padding: 0.5rem;
+    padding-bottom: 0
+}
+
+@media screen and (max-width:600px) {
+    #declareHead {
+        height: 6rem;
+    }
+}

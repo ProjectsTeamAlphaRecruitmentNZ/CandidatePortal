@@ -1,0 +1,13 @@
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\bin\portal_1.3.dll
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\bin\portal_1.3.pdb
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\bin\portal_1.3.xml
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\portal_1._3.Resources.resources
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\portal_1.3.vbproj.GenerateResource.Cache
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\portal_1.3.dll
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\portal_1.3.xml
+C:\inetpub\wwwroot\candidateportal_1.0\portal_1.3\portal_1.3\obj\Debug\portal_1.3.pdb
+C:\inetpub\wwwroot\candidateportal_1.0\portal1.3\portal_1.3\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\candidateportal_1.0\portal1.3\portal_1.3\obj\Debug\portal_1._3.Resources.resources
+C:\inetpub\wwwroot\candidateportal_1.0\portal1.3\portal_1.3\obj\Debug\portal_1.3.vbproj.GenerateResource.Cache
+C:\inetpub\wwwroot\candidateportal_1.0\portal1.3\portal_1.3\obj\Debug\portal_1.3.vbprojResolveAssemblyReference.cache

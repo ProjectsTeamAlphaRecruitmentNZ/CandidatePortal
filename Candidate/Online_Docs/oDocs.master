@@ -1,0 +1,243 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Portal.Master" CodeFile="ODocs.master.vb" AutoEventWireup="false" Inherits="ODocs" %>
+<%@ MasterType VirtualPath="~/Portal.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="portalHead" runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/Styles-new-user.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/edit.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <%--<link rel="stylesheet" type="text/css" href="style-online-docs.css"/>--%>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- SPELLS -->    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/PageRoutingDocs.js"></script>  
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!-- Load jQuery JS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- Load jQuery UI Main JS  -->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="PortalBody" runat="server">
+ <sf:Connection ID="SIFConn" runat="server">
+    </sf:Connection>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <%--<div id="header">
+	        <div class="container--header">
+		        <nav id="nav--header">
+		            <div id="nav-icon2">
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		            </div>
+		            <div class="background-menu--open">
+		              <ul class="nav--main-manu">
+			            <li>
+			                <a href="file:///C:/Users/annas/Desktop/Candidate%20Portal/FINAL/Profile/Profile.html#/" aria-selected="true" class="subnav-item">Profile</a>
+			            </li>
+			            <li>
+			                <a href="file:///C:/Users/annas/Desktop/Candidate%20Portal/FINAL/Profile/Profile%20-%20Edit.html#/">Edit Profile</a>
+			            </li>
+			            <li>
+			                <a href="#">Log out</a>
+			            </li>
+		              </ul>
+		            </div>
+		        </nav>
+	        </div> 
+	    </div>--%>
+        <div id="header" class="">
+              <div class="container--header">
+	           <a class="navigationbar__header__logo" href="" target="_self">
+                    <div id="Alpha-brand">
+                    <image src="../img/logo.png" alt="Jobs Online"></image>
+                    </div>
+                </a>
+	            <nav id="nav--header">
+  	            <div id="nav-icon2">
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	            </div>
+	             <div class="background-menu--open">
+	              <ul class="pad-top--header">
+		            <li>
+		              <a id="logout"   runat="server" class="logout" >LOG OUT <img src="../img/logout.svg" alt="LOGOUT"></a>
+		            </li>
+	              </ul>
+	            </div>
+	            </nav>
+              </div>
+            </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <div class="clear"></div>
+        <div class="content">
+            <div class="layout">
+			    <div class="layout__item md-3of12 m-b22 x-1">
+			        <div id="notification-mt"></div>
+			            <label class="profile-navigation--title">
+				            <div class="profile-navigation__cont toggle-icon">
+					            <div class="infoToggler">
+						            <span>Profile Navigation</span>
+						            <img src="../img/arrow-up-flat.png" class="toggle-icon-img"/>
+						            <img src="../img/arrow-down-flat.png" class="toggle-icon-img hidden"/>
+					            </div>
+
+				            </div>
+			            </label>
+		                <nav class="profile-navigation__nav md-block">
+					            <div class="cont-prog-bar">
+						            <div class="profile-navigation__title">
+							            <span>Profile Completion:</span>
+							            <span class="percentage">63%</span>
+						            </div>
+						            <div class="profile-navigation__progress">
+							            <div class="profile-navigation__progress__bar" style="width: 63%;"></div>
+						            </div>
+					            </div>
+					            <div>
+						            <ul class="profile-navigation__list xs-mlh-1" runat="server" id="DocsListControl" style="padding-right: 1.5rem;">
+                                        <asp:Label runat="server" ID="TestCand"></asp:Label>
+							            <li class="profile-navigation__item" id="onlinedocspage">
+								            <a href="Online Documents.aspx">Online Documents</a>
+							            </li>
+							            <%--<li class="pad_l profile-navigation__item current" id="candidateDeclaration">
+								            <a href="Candidate Declaration.aspx">Candidate declaration</a>
+							            </li>--%>
+                                        <%--<li class="pad_l profile-navigation__item current"  runat="server" id="HealthAndSafetyDeclaration">
+								            <a href="Health and Safety Declaration.aspx">Health and Safety Declaration</a>
+							            </li>
+                                        <li class="pad_l profile-navigation__item current" id="InsuranceDeclaration">
+								            <a href="Insurance declaration.aspx">Insurance declaration</a>
+							            </li>--%>
+                                        <%--<li class="pad_l profile-navigation__item current" id="DirectCreditDebitPaymentForm">
+								            <a href="Direct credit debit payment form.aspx">Direct credit debit payment form</a>
+							            </li>--%>
+                                        <li class="pad_l profile-navigation__item current" id="IndividualEmploymentAgreementTEMP">
+								            <a href="Individual Employment Agreement (TEMP).aspx">Individual Employment Agreement (TEMP)</a>
+							            </li>
+                                        <%--<li class="pad_l profile-navigation__item current" id="ContractForServiceIndependentContractor">
+								            <a href="Contract for Service Independent Contractor.aspx">Contract for Service Independent Contractor</a>
+							            </li>--%>
+							            <li class="pad_l profile-navigation__item" id="requestForCriminalHistory">
+								            <a href="Criminal conviction history - third party.aspx">Criminal conviction history - third party </a>
+							            </li>
+                                        <%--<li class="pad_l profile-navigation__item" id="requestandconsentform">
+								            <a href="Request and Consent form.aspx">Request and Consent form </a>
+							            </li>--%>
+                                        <li class="pad_l profile-navigation__item"  runat="server" id="IRD330">
+								            <a href="Tax code declaration.aspx">Tax code declaration </a>
+							            </li>
+                                        <%--<li class="pad_l profile-navigation__item" id="IRD330C">
+								            <a href="Tax rate notification for contractors.aspx">Tax rate notification for contractors </a>
+							            </li>--%>
+                                        <li class="pad_l profile-navigation__item" id="kiwisaverdeductionform">
+								            <a href="KiwiSaver deduction form.aspx">KiwiSaver deduction form </a>
+							            </li>
+                                        <li class="pad_l profile-navigation__item" id="newemployeeoptoutrequest">
+								            <a href="New employee opt-out request.aspx">New employee opt-out request </a>
+							            </li>
+                                        <%--<li class="pad_l profile-navigation__item" id="StaffAgreementADHB">
+								            <a href="Staff Agreement ADHB.aspx">Staff Agreement ADHB </a>
+							            </li>--%>
+                                        <%--<li class="pad_l profile-navigation__item" id="ConsentforDrugandAlcoholtesting">
+								            <a href="Consent for Drug and Alcohol testing.aspx">Consent for Drug and Alcohol testing </a>
+							            </li>--%>
+
+
+                                        
+							            <li class="profile-navigation__item">
+								            <a href="">Back to Main Menu</a>
+							            </li>
+						            </ul>
+					            </div>
+				            </nav>
+			        </div>
+                <div class="info-form xs-mt0 layout__item md-9of12 x-1" id="form-container" style="background-color: transparent;">	
+				    <div id="main" class="info-1 online-docs">   
+                   
+                            <asp:ContentPlaceHolder id="contentBody" runat="server">
+                            </asp:ContentPlaceHolder>
+                    
+				    </div> 
+			    </div>
+		    </div>
+        </div>
+         <div class="clear"></div>
+        <div class="footer">
+            	<footer class="logo_area footer-profile">
+		            <div id="footer-content">
+			            <div class="footer--row">
+				            <!---- start---->
+				            <div class="site-map floatLeft col-ftr">
+					            <ul class="site-map">
+						            <li><h6>Quick Links</h6></li>
+						            <li class="quick-link"> <a href="#"> Details</a></li>
+						            <li class="quick-link"> <a href="#my-jobs">Jobs</a></li>
+						            <li class="quick-link"> <a href="#timesheets">Timesheets</a></li>
+						            <li class="quick-link"> <a href="#availability">Availability</a></li>
+						            <li class="quick-link"> <a href="#leave">Leave</a></li>
+						            <li class="quick-link"> <a href="#expenses">Expenses</a></li>
+						            <li class="quick-link"> <a href="#health-and-safety">Health and Safety</a></li>
+						            <li class="quick-link"> <a href="#training-and-qualification">Training and Qualification</a></li><br><br>
+						            <h6 class="sml">Technical support</h6>
+					               <p class="text-details">
+						               Email: <a href="mailto:support@alphajobs.co.nz">support@alphajobs.co.nz</a><br>
+						               Phone: <a href="tel:09 524 2336">(09) 524 2336</a><br><br>
+					               </p>
+					            </ul>
+					
+				             </div>
+				            <div class="contact-details floatLeft col-ftr">
+					            <h6>Contact Us</h6>
+					             <h6 class="sml">Physical address </h6>
+					            <p class="text-details">
+						            address
+					            </p>
+					            <h6 class="sml">Phone </h6>
+					            <p class="text-details">
+						            <a href="tel:+64 9 379 7628">+64 9 379 7628</a><br><br>
+					            </p>
+					
+				   
+				            </div>
+				            <!---- end---->
+			            </div>	 
+			            <div class="clear"></div>
+			            <div class="copyright floatLeft">
+				            <p id="copyright-text">Copyright &#169; Alpha Personnel Recruitment Ltd 2011-2017 </p>
+				            <div id="socket--item-set">
+					            <div class="item--socket"><a>Sitemap</a></div>
+					            <div class="item--socket"><a>Terms&#38;Conditions</a></div>
+				            </div>
+			            </div>
+		            </div>
+	</footer>
+        </div>
+    </div>
+    </form>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="PortalFooter" runat="server">
+</asp:Content>

@@ -1,0 +1,87 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Portal.Master" CodeFile="NEWODocs.master.vb" AutoEventWireup="false" Inherits="ODocs" %>
+<%@ MasterType VirtualPath="~/Portal.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="portalHead" runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="../css/Styles-new-user.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css/font-awesome.css">
+    <link href="../css/PopUp.css" rel="Stylesheet" type="text/css" /> 
+    <link href="../css/jquery-ui.min.css" rel="Stylesheet" type="text/css" /> 
+    <link href="../css/sweetalert.min.css" rel="stylesheet" />
+    <%--<link rel="stylesheet" type="text/css" href="style-online-docs.css"/>--%>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="PortalBody" runat="server">
+    <sf:Connection ID="SIFConn" runat="server"></sf:Connection>
+    <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="Div1" class="content" runat="server">
+        <asp:ContentPlaceHolder ID="NewUserMenuL1" runat="server">
+            <div id="header" class="mt8">
+              <div class="container--header">
+	           <a class="navigationbar__header__logo" href="" target="_self">
+                    <div id="Alpha-brand">
+                    <image src="../img/logo.png" alt="Jobs Online"></image>
+                    </div>
+                </a>
+	            <nav id="nav--header">
+  	            <div id="nav-icon2">
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	            </div>
+	             <div class="background-menu--open">
+	              <ul class="pad-top--header">
+		            <li>
+		              <a id="logout" onserverclick="Logout_Click"  runat="server" class="logout" >LOG OUT <img src="../img/logout.svg" alt="LOGOUT"></a>
+		            </li>
+	              </ul>
+	            </div>
+	            </nav>
+              </div>
+            </div>
+        </asp:ContentPlaceHolder>
+        <div class="bgImage"></div>
+        <div id="Div2" class="container container--paper" runat="server"> 
+            
+            <div class="info-form xs-mt0 form_container" id="form_container" runat="server">
+                <asp:ContentPlaceHolder ID="NewUserContent" runat="server">
+                </asp:ContentPlaceHolder>
+                 <form id="Form1" runat="server"    >
+                <asp:ContentPlaceHolder ID="contentBody" runat="server">
+                </asp:ContentPlaceHolder>
+    </form>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+   
+<asp:Content ID="Content3" ContentPlaceHolderID="PortalFooter" runat="server">
+    <footer class="logo_area">
+        <div class="footerLogos">       
+	        <a href="http://www.alphajobs.co.nz/" target="_blank"><img src="../img/dl-alpha.png" alt="alpha_logo"></a>
+	        <a href="http://www.trianglerecruitment.co.nz/" target="_blank"><img src="../img/dl-triangle.png" alt="triangle_logo"></a>
+	        <a href="http://www.projectplus.co.nz/" target="_blank"><img src="../img/dl-projectplus.png" alt="projectplus_logo"></a>
+	        <a href="http://www.healthwisepersonnel.co.nz/" target="_blank"><img src="../img/dl-healthwise.png" alt="healthwise_logo"></a>
+	        <a href="http://www.freightwise.co.nz/index.php" target="_blank"class="mob-img-fr"><img src="../img/dl-freightwise.png" alt="freightwise_logo"></a>
+            <a href="https://www.alphajobs.co.nz/clients/contractor-management/" target="_blank"> <img src="../img/dl-alphacms.png" alt="alpha_cms_logo"></a>
+       </div>
+       <br>
+        <div id="copyright">
+            <p>© Copyright <%=DateTime.Now.Year%> Alpha Personnel Recriutment Ltd | 
+                <a  href="https://www.alphajobs.co.nz/privacy-policy" target="_blank" >Privacy Policy</a> | 
+                <a href="https://www.alphajobs.co.nz/terms-and-conditions" target="_blank">Terms & Condition</a>
+                | Technical Support: &nbsp;Ph: <a href="tel:+6495225702">(09) 522 5702</a> | 
+                E: <a href="mailto:reception@alphajobs.co.nz">support@alphajobs.co.nz</a>
+            </p>
+        </div>
+    </footer>
+</asp:Content>

@@ -1,0 +1,95 @@
+
+#header {background: url('www.alphaonline.co.nz/jobsonline/images/sandriwalsh-header.jpg') no-repeat 50% 37%!important;height: 300px!important;width: 100%;}
+#logo{margin-top: 2rem!important;height: 5rem!important;margin-left: 3%!important;}
+.container--header{max-width: 100%!important;width: 100%!important;}
+.profile-navigation__progress__bar, .profile-navigation__progress__bar{background-color: #f18c3b!important;}
+.percentage {color: #f18c3b!important;}
+.profile-navigation__item > a:hover, a:hover{color:#be6633!important}
+.btn:hover,.add-pos-btn:hover, .add-qual-btn:hover, .add-leave-btn:hover, .add-expenses-btn:hover, #incident-form-btn:hover, #dii-form-btn:hover, .bt:hover{background:#c6c22e!important; color:#ffffff!important}
+.color-skills:hover, #return-to-top:hover, #submitButton{background-color:#c6c22e!important}
+#submitButton:hover{background-color: #c6c22e;border:1px solid grey}
+.my-job-title, .t-and-q-title, .referee-title--01{color: #2eb8e9;}
+.row.header,.col-labels{background:#f18c3b!important}
+.confirm{background-color:#003A5C!important}
+.header--general-info{background-color: #f18c3b!important;}
+.header--general-info h2{color:#ffffff!important}
+#nav-icon2 span{background: #ffffff!important;}
+h6{color:#ffffff!important;text-align: center!important;}
+h6.sml{text-align: left!important;}
+
+.col-ftr, .contact-details {background-color: rgba(0,58,92,0.7)!important;}
+.quick-link a, .text-details, .contact-details a{color: #d9d9d9!important;}
+.logo_area{height: 100%;overflow: hidden;}
+.copyright{background-color: black!important;}
+.footer--row{background: url('www.alphaonline.co.nz/jobsonline/images/sandriwalsh-footer.jpg') no-repeat !important;background-size: cover !important;margin-top:-1.4rem}
+
+@media screen and (min-width:600px){
+#nav--header ul{height: 18.6rem!important;margin-top:22.5rem !important;margin-right: 2rem;display: inline;}
+#nav--header ul li a{color: #ffffff !important;margin-top: 3.2rem!important;font-size: 1.4rem!important;text-transform: uppercase!important;letter-spacing: 0.03rem!important;font-weight: 500!important;}
+.subnav-item[aria-selected="true"]::before,.subnav-item1[aria-selected="true"]::before{background-color: #2eb8e9!important;}
+.subnav-item[aria-selected="true"]::before{width: 4.8rem;top: 8.5rem;margin-left: 0.6rem;}
+.subnav-item1[aria-selected="true"]::before{width: 8.5rem!important;top: 8.5rem!important;left: 9.5rem!important;}
+.profile-navigation--title{background-color: #002a5c !important;color: #ffffff !important;}
+}
+
+@media screen and (max-width:1000px) and (min-width:600px){
+	#logo{margin-left: 2% !important;height: 4.7rem !important;}
+	#nav--header ul{margin-right: 1rem;}
+		.content{width:100%!important;margin-left:0%!important;margin-right:0%!important}
+.form_container, .profile-navigation__nav {width: 86%!important;margin-left:7%!important;margin-right:7%!important}
+	.m-b22{margin-top: 5rem!important;}
+}
+
+@media screen and (max-width:600px){
+	.profile-navigation--title{background-color: #003A5C!important;color:#ffffff!important}
+	
+	#logo{height: 5rem !important;margin-left: 2% !important;}
+	#footer-content{background: url('http://www.alphaonline.co.nz/jobsonline/images/sandriwalsh-footer.jpg') no-repeat !important;background-size: cover !important;margin-top: -1.4rem;height: 100%;overflow: hidden;}
+	.copyright{top: 1.4rem;}
+	.site-map{margin-left: 2rem !important;}
+		.form_container{margin-top: 6rem!important;}
+	.m-b22{margin-top: 5rem!important;}
+}
+
+@media screen and (max-width:400px){
+	#logo{height: 3.7rem !important;margin-left: 1% !important;margin-top: 2.7rem !important;}
+}
+
+@media screen and (max-width:500px){
+	.copyright{height: 7.5rem!important;top: 1.4rem!important;}
+	#socket--item-set{left: 3rem !important;}
+	#copyright-text{position: absolute!important;top: 3rem!important;}
+	.col-ftr, .contact-details{margin: 4rem 7.5% 1rem!important;}
+}
+
+@media screen and (max-width:400px){
+#copyright-text{left: 0.2rem!important;}
+#socket--item-set{left: -0.7rem !important;}	
+}
+
+
+/*
+header:
+<img alt="logo" id="logo" src="http://www.alphaonline.co.nz/jobsonline/images/logo-sandriwalsh.png">
+
+
+footer:
+	<div class="contact-details floatLeft col-ftr">
+			<h6 class="center">Contact Us</h6>
+
+
+			<h6 class="sml">Address </h6>
+			<p class="text-details">
+				Level 10, 342 Lambton Quay (thru AMI Plaza)<br>
+				P.O. Box 25-594, Featherston St, Wellington 6146<br>
+				Phone: +64 (0) 4 978 1824<br><br>
+			</p>
+
+		   <h6 class="sml">Technical support</h6>
+		   <p class="text-details">
+			   Email: <a href="mailto:support@alphajobs.co.nz">support@alphajobs.co.nz</a><br>
+			   Phone: (09) 524 2336<br><br>
+		   </p>
+					   
+	</div>
+*/

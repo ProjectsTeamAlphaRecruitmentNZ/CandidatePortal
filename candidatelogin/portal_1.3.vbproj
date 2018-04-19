@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCA28877-B7A9-4E5E-AE08-8845F6EF04FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>portal_1._3</RootNamespace>
+    <AssemblyName>portal_1.3</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>Off</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>portal_1.3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>portal_1.3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StayinFront.Engine, Version=12.0.15.4, Culture=neutral, PublicKeyToken=62c3274750c83f8a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\StayinFront.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="StayinFront.Engine.Net, Version=12.0.15.9, Culture=neutral, PublicKeyToken=62c3274750c83f8a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\StayinFront.Engine.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="StayinFront.Web, Version=12.0.15.7, Culture=neutral, PublicKeyToken=62c3274750c83f8a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\portal_1.3.dll" />
+    <Content Include="bin\portal_1.3.pdb" />
+    <Content Include="bin\portal_1.3.xml" />
+    <Content Include="css\style.css" />
+    <Content Include="css\Styles-new-user.css" />
+    <Content Include="css\templates\sandriwalsh.css" />
+    <Content Include="css\templates\southerncross.css" />
+    <Compile Include="Default.aspx" />
+    <Content Include="Details.aspx" />
+    <Content Include="js\new-user-form-handler.js" />
+    <Content Include="libs\flashcanvas.js" />
+    <Content Include="libs\flashcanvas.swf" />
+    <Content Include="libs\jSignature.min.js" />
+    <Content Include="libs\jSignature.min.noconflict.js" />
+    <Content Include="libs\PageRout-OnlineDocs.js" />
+    <Content Include="New.aspx" />
+    <Content Include="NewUser\NewUser-ProfileInfo-5.aspx" />
+    <Content Include="obj\Debug\portal_1.3.dll" />
+    <Content Include="obj\Debug\portal_1.3.pdb" />
+    <Content Include="obj\Debug\portal_1.3.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\portal_1.3.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="Web1.config" />
+    <Content Include="SearchJob.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\StayinFrontHelper.vb" />
+    <Compile Include="App_Code\StayinFrontSearches.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.designer.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="New.aspx.designer.vb">
+      <DependentUpon>New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New.aspx.vb">
+      <DependentUpon>New.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NewUser\NewUser-ProfileInfo-5.aspx.designer.vb">
+      <DependentUpon>NewUser-ProfileInfo-5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser\NewUser-ProfileInfo-5.aspx.vb">
+      <DependentUpon>NewUser-ProfileInfo-5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal.Master.designer.vb">
+      <DependentUpon>Portal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portal.Master.vb">
+      <DependentUpon>Portal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profileEdit.aspx.designer.vb">
+      <DependentUpon>profileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profileEdit.aspx.vb">
+      <DependentUpon>profileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SearchJob.aspx.designer.vb">
+      <DependentUpon>SearchJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchJob.aspx.vb">
+      <DependentUpon>SearchJob.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\portal_1._3.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\Allowance_Claim_Form.pdf" />
+    <None Include="docs\Contractor_Direct_Credit_&amp;_IRD_Form.pdf" />
+    <None Include="docs\Resignation_Form.pdf" />
+    <None Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="font-awesome-4.7.0\less\animated.less" />
+    <None Include="font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="font-awesome-4.7.0\less\core.less" />
+    <None Include="font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="font-awesome-4.7.0\less\icons.less" />
+    <None Include="font-awesome-4.7.0\less\larger.less" />
+    <None Include="font-awesome-4.7.0\less\list.less" />
+    <None Include="font-awesome-4.7.0\less\mixins.less" />
+    <None Include="font-awesome-4.7.0\less\path.less" />
+    <None Include="font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="font-awesome-4.7.0\less\stacked.less" />
+    <None Include="font-awesome-4.7.0\less\variables.less" />
+    <None Include="font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NewUser\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="NewUser\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="NewUser\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="NewUser\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="NewUser\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="NewUser\font-awesome-4.7.0\less\animated.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\core.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\icons.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\larger.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\list.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\path.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="NewUser\font-awesome-4.7.0\less\variables.less" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="NewUser\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="css\Timesheet template.css" />
+    <Content Include="js\admin.js" />
+    <Content Include="js\timesheet.js" />
+    <Compile Include="js\profile.js" />
+    <Content Include="NewUser\NewUser-ProfileInfo-2.aspx" />
+    <Compile Include="NewUser\NewUser.Master" />
+    <None Include="obj\Debug\portal_1.3.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <Content Include="Profile\admin\AdminPage-Templates.aspx" />
+    <Content Include="Profile\admin\AdminPage.Master" />
+    <Content Include="Profile\Settings-Opt-out.aspx" />
+    <Content Include="Profile\Settings.Master" />
+    <None Include="Profile\timesheet\Timesheet.Master" />
+    <None Include="Profile\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Profile\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Profile\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Profile\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="Profile\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="Profile\font-awesome-4.7.0\less\animated.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\core.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\icons.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\larger.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\list.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\path.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="Profile\font-awesome-4.7.0\less\variables.less" />
+    <None Include="Profile\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="Profile\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="web.config" />
+    <Content Include="web2.config" />
+    <Content Include="Profile\admin\AdminPage-Home.aspx" />
+    <Content Include="Profile\admin\AdminPage-Public-Holidays.aspx" />
+    <Content Include="Profile\Settings-Change-password.aspx" />
+    <Content Include="Profile\Profile-Health-and-Safety.aspx" />
+    <Content Include="Profile\Profile-Qualification.aspx" />
+    <Content Include="Profile\Profile - Expenses.aspx" />
+    <Content Include="Profile\Profile - Leave.aspx" />
+    <Compile Include="Profile\admin\AdminPage-Home.aspx.designer.vb">
+      <DependentUpon>AdminPage-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage-Home.aspx.vb">
+      <DependentUpon>AdminPage-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage-Templates.aspx.designer.vb">
+      <DependentUpon>AdminPage-Templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage-Templates.aspx.vb">
+      <DependentUpon>AdminPage-Templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage.Master.designer.vb">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage.Master.vb">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage-Public-Holidays.aspx.designer.vb">
+      <DependentUpon>AdminPage-Public-Holidays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\admin\AdminPage-Public-Holidays.aspx.vb">
+      <DependentUpon>AdminPage-Public-Holidays.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Settings-Opt-out.aspx.designer.vb">
+      <DependentUpon>Settings-Opt-out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Settings-Opt-out.aspx.vb">
+      <DependentUpon>Settings-Opt-out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Settings.Master.designer.vb">
+      <DependentUpon>Settings.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Settings.Master.vb">
+      <DependentUpon>Settings.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Settings-Change-password.aspx.designer.vb">
+      <DependentUpon>Settings-Change-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Settings-Change-password.aspx.vb">
+      <DependentUpon>Settings-Change-password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile-Health-and-Safety.aspx.designer.vb">
+      <DependentUpon>Profile-Health-and-Safety.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile-Health-and-Safety.aspx.vb">
+      <DependentUpon>Profile-Health-and-Safety.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile-Qualification.aspx.designer.vb">
+      <DependentUpon>Profile-Qualification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile-Qualification.aspx.vb">
+      <DependentUpon>Profile-Qualification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\timesheet\Timesheet.Master.designer.vb">
+      <DependentUpon>Timesheet.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\timesheet\Timesheet.Master.vb">
+      <DependentUpon>Timesheet.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile - Expenses.aspx.designer.vb">
+      <DependentUpon>Profile - Expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile - Expenses.aspx.vb">
+      <DependentUpon>Profile - Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile - Availability.aspx" />
+    <Content Include="Profile\Profile - Timesheets.aspx" />
+    <Content Include="Profile\Profile - My Jobs.aspx" />
+    <Content Include="Profile\Profile-Details.aspx" />
+    <Content Include="Profile\Profile.Master" />
+    <Content Include="css\log_in.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="img\608_-_Referrals-512.png" />
+    <Content Include="img\arrow-down-flat.png" />
+    <Content Include="img\arrow-down-grey.png" />
+    <Content Include="img\arrow-down.png" />
+    <Content Include="img\arrow-right-grey.png" />
+    <Content Include="img\arrow-right.png" />
+    <Content Include="img\arrow-up-flat.png" />
+    <Content Include="img\availability.png" />
+    <Content Include="img\blockletters.PNG" />
+    <Content Include="img\business-team-meeting.jpg" />
+    <Content Include="img\change_password.png" />
+    <Content Include="img\copy-hours.jpg" />
+    <Content Include="img\copy-hours.png" />
+    <Content Include="img\copy.png" />
+    <Content Include="img\cross.JPG" />
+    <Content Include="img\cross.png" />
+    <Content Include="img\emergency-contact.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\exclamation-police-request.JPG" />
+    <Content Include="img\expenses.png" />
+    <Content Include="img\H&amp;S.png" />
+    <Content Include="img\header-southerncross.jpg" />
+    <Content Include="img\ir-logo-black.png" />
+    <Content Include="img\ir-logo.png" />
+    <Content Include="img\ird.PNG" />
+    <Content Include="img\ks.png" />
+    <Content Include="img\ks10-0509.PNG" />
+    <Content Include="img\ks2-0509.PNG" />
+    <Content Include="img\leave.png" />
+    <Content Include="img\logo-sandriwalsh.png" />
+    <Content Include="img\logo-southerncross.png" />
+    <Content Include="img\ministry-of-justice.PNG" />
+    <Content Include="img\minus-icon.png" />
+    <Content Include="img\my-docs.png" />
+    <Content Include="img\my-jobs.png" />
+    <Content Include="img\my-jobs.svg" />
+    <Content Include="img\next-white.png" />
+    <Content Include="img\office-use.JPG" />
+    <Content Include="img\paper-clip.JPG" />
+    <Content Include="img\pen.svg" />
+    <Content Include="img\pencil.ico" />
+    <Content Include="img\person.jpg" />
+    <Content Include="img\personal-information.png" />
+    <Content Include="img\plus-icon.png" />
+    <Content Include="img\police-check-info.PNG" />
+    <Content Include="img\prev-white.png" />
+    <Content Include="img\public-holidays.png" />
+    <Content Include="img\qualification.png" />
+    <Content Include="img\recalculate.png" />
+    <Content Include="img\role-and-skills.svg" />
+    <Content Include="img\sign-cross.JPG" />
+    <Content Include="img\signature.JPG" />
+    <Content Include="img\skills-2.png" />
+    <Content Include="img\success.png" />
+    <Content Include="img\templates-icon.png" />
+    <Content Include="img\templates.png" />
+    <Content Include="img\tick-police-request.JPG" />
+    <Content Include="img\tick.JPG" />
+    <Content Include="img\tick.png" />
+    <Content Include="img\timesheet.png" />
+    <Content Include="img\user.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="img\work-contacts.png" />
+    <Content Include="img\work-history.png" />
+    <Compile Include="login.aspx" />
+    <Compile Include="NewUser\NewUser-ProfileInfo-1.aspx.designer.vb">
+      <DependentUpon>NewUser-ProfileInfo-1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser\NewUser-ProfileInfo-1.aspx.vb">
+      <DependentUpon>NewUser-ProfileInfo-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUser\NewUser-ProfileInfo-2.aspx.designer.vb">
+      <DependentUpon>NewUser-ProfileInfo-2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser\NewUser-ProfileInfo-2.aspx.vb">
+      <DependentUpon>NewUser-ProfileInfo-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUser\NewUser.Master.designer.vb">
+      <DependentUpon>NewUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser\NewUser.Master.vb">
+      <DependentUpon>NewUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="logout.aspx" />
+    <Content Include="NewUser\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="NewUser\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="NewUser\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="NewUser\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Compile Include="NewUser\NewUser-ProfileInfo-1.aspx" />
+    <Compile Include="Profile\Profile - Leave.aspx.designer.vb">
+      <DependentUpon>Profile - Leave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile - Leave.aspx.vb">
+      <DependentUpon>Profile - Leave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile - Availability.aspx.designer.vb">
+      <DependentUpon>Profile - Availability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile - Availability.aspx.vb">
+      <DependentUpon>Profile - Availability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile - Timesheets.aspx.designer.vb">
+      <DependentUpon>Profile - Timesheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile - Timesheets.aspx.vb">
+      <DependentUpon>Profile - Timesheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile - My Jobs.aspx.designer.vb">
+      <DependentUpon>Profile - My Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile - My Jobs.aspx.vb">
+      <DependentUpon>Profile - My Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile-Details.aspx.designer.vb">
+      <DependentUpon>Profile-Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile-Details.aspx.vb">
+      <DependentUpon>Profile-Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile.Master.designer.vb">
+      <DependentUpon>Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile.Master.vb">
+      <DependentUpon>Profile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\timesheet\TimesheetDetails.aspx.designer.vb">
+      <DependentUpon>TimesheetDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\timesheet\TimesheetDetails.aspx.vb">
+      <DependentUpon>TimesheetDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\timesheet\TimesheetPrint.aspx.designer.vb">
+      <DependentUpon>TimesheetPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\timesheet\TimesheetPrint.aspx.vb">
+      <DependentUpon>TimesheetPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="NewUser\New User - thank-you.html" />
+    <Content Include="Portal.Master" />
+    <Content Include="profileEdit.aspx" />
+    <Content Include="Profile\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Profile\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Profile\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Profile\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Profile\font-awesome-4.7.0\less\font-awesome.css" />
+    <Content Include="Profile\font-awesome-4.7.0\less\mixins.css" />
+    <Content Include="Profile\font-awesome-4.7.0\less\variables.css" />
+    <Content Include="Profile\font-awesome-4.7.0\scss\font-awesome.css" />
+    <Content Include="Profile\timesheet\TimesheetDetails.aspx" />
+    <Content Include="Profile\timesheet\TimesheetPrint.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56747</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://www.alphaonline.co.nz/JobsOnline/candidate</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,35 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Portal.Master.vb" Inherits="Portal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head" runat="server">
+    <link rel="SHORTCUT ICON" href="favicon.ico"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757817-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117757817-1');
+</script>
+
+    <asp:ContentPlaceHolder ID="portalHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="mainBody" runat="server">
+    
+        <sf:Connection ID="SIFConnection" runat="server"></sf:Connection>
+        <div id="htmlContainer">
+            <asp:ContentPlaceHolder ID="portalBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="htmlFooter">
+            <asp:ContentPlaceHolder ID="portalFooter" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+</body>
+</html>

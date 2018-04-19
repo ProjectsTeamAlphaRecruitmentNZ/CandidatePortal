@@ -1,0 +1,174 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Portal.Master" AutoEventWireup="false" CodeFile="NewUser.master.vb" Inherits="NewUserMaster" %>
+<%@ MasterType VirtualPath="~/Portal.Master" %>
+<asp:Content ContentPlaceHolderID="portalHead" runat="server">
+    <asp:ContentPlaceHolder ID="NewUserTitle" runat="server"></asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/Styles-new-user.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css/font-awesome.css">
+    <link href="../css/PopUp.css" rel="Stylesheet" type="text/css" /> 
+    <link href="../css/jquery-ui.min.css" rel="Stylesheet" type="text/css" /> 
+    <link href="../css/sweetalert.min.css" rel="stylesheet" />
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/nhpup_1.1.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>    
+    <script src="../js/sweetalert.min.js"></script>
+    <asp:ContentPlaceHolder ID="NewUserScripts" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PortalBody" runat="server">
+     <sf:Connection ID="SIFCon1" runat="server"></sf:Connection>
+    <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div class="content" runat="server">
+        <asp:ContentPlaceHolder ID="NewUserMenuL1" runat="server">
+            <div id="header" class="mt8">
+              <div class="container--header">
+	           <a class="navigationbar__header__logo" href="" target="_self">
+                    <div id="Alpha-brand">
+                    <image src="../img/logo.png" alt="Jobs Online"></image>
+                    </div>
+                </a>
+	            <nav id="nav--header">
+  	            <div id="nav-icon2">
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	            </div>
+	             <div class="background-menu--open">
+	              <ul class="pad-top--header">
+		            <li>
+		              <a id="logout" onserverclick="Logout_Click"  runat="server" class="logout" >LOG OUT <img src="../img/logout.svg" alt="LOGOUT"></a>
+		            </li>
+	              </ul>
+	            </div>
+	            </nav>
+              </div>
+            </div>
+        </asp:ContentPlaceHolder>
+        <div class="bgImage"></div>
+        <div class="container container--paper" runat="server"> 
+            <asp:ContentPlaceHolder ID="NewUserMenuL2" runat="server">
+                <div class="progress">
+                  <a id ="pageOne" href="NewUser-ProfileInfo-1.aspx" onserverclick="ChangePage_Click" runat="server" >
+                  <div class="circle active">
+                    <p class="label">1</p>
+                    <p class="title">General Info</p>
+                  </div></a>
+                  <a id ="pageTwo" href="NewUser-ProfileInfo-2.aspx" onserverclick="ChangePage_Click" runat="server" >
+                  <div class="circle">
+                    <p class="label">2</p>
+                    <p class="title">Profile</p>
+                  </div></a>
+                  <a id ="pageThree" href="NewUser-ProfileInfo-3.aspx" onserverclick="ChangePage_Click" runat="server" >
+                  <div class="circle">
+                    <p class="label">3</p>
+                    <p class="title">Wanted Roles</p>
+                  </div></a>
+                  <a id ="pageFour" href="NewUser-ProfileInfo-4.aspx" onserverclick="ChangePage_Click" runat="server" >
+                  <div class="circle">
+                    <p class="label">4</p>
+                    <p class="title">Skills</p>
+                  </div></a>
+                  <a id ="pageFive" href="NewUser-ProfileInfo-5.aspx" onserverclick="ChangePage_Click" runat="server" >
+                  <div class="circle">
+                    <p class="label">5</p>
+                    <p class="title">Referees</p>
+                  </div></a>
+                   <a id ="pageSix" href="NewUser-ProfileInfo-6.aspx" onserverclick="ChangePage_Click" runat="server" >
+                   <div class="circle">
+                    <p class="label">6</p>
+                    <p class="title">Declaration</p>
+                  </div></a>
+                </div>
+            </asp:ContentPlaceHolder>
+            <div class="info-form xs-mt0 form_container" id="form_container" runat="server">
+                <asp:ContentPlaceHolder ID="NewUserContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PortalFooter" runat="server">
+    <!--<footer id="footer">
+    <div class="overlay sec-title  white wow">
+                <div class="footCont">
+                    <span class="footerHeading">Technical support: &nbsp;</span>
+                    <span><strong>Ph:</strong> <a href="tel:+6495242336">(09) 524 2336</a></span><span><strong>E:</strong> <a href="mailto:reception@alphajobs.co.nz">support@alphajobs.co.nz</a></span>
+                </div>
+                <div class="col-md-4">
+                    <p class="footerHeading">Contact Us</p>
+                    <div class="footCont">
+                        <span><strong>Phone : </strong> <a href="tel:+6493797628">+64 9 379 7628</a></span>
+                        <br />
+                        <span><strong>Email : </strong> <a href="mailto:reception@alphajobs.co.nz">reception@alphajobs.co.nz</a></span>
+                        <br />
+                        <span><strong>Web : </strong> <a href="www.alphajobs.co.nz">www.alphajobs.co.nz</a></span>
+                        <br />
+                    </div>
+                </div>
+            <div class="col-md-4">
+                <p class="footerHeading">Connect with us on Social Media</p>
+                <div class="footCont">
+                    <a href="https://www.facebook.com/alpharecruitmentgroup/" target="_blank"><img src="../img/facebook.svg" alt="FB"></a>
+                    <a href="https://twitter.com/alphajobsnz" target="_blank"><img src="../img/twitter.svg" alt="TW"></a>
+                    <a href="https://nz.linkedin.com/company/alpha-recruitment" target="_blank"><img src="../img/linkedin2.svg" alt="LI"></a>
+                    <a href="https://www.instagram.com/explore/locations/203979066314178/alpha-recruitment/" target="_blank"><img src="../img/instagram.svg" alt="IG"></a>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+   <footer class="logo_area">
+        <div class="footerLogos">       
+	        <a href="http://www.alphajobs.co.nz/" target="_blank"><img src="../img/dl-alpha.png" alt="alpha_logo"></a>
+	        <a href="http://www.trianglerecruitment.co.nz/" target="_blank"><img src="../img/dl-triangle.png" alt="triangle_logo"></a>
+	        <a href="http://www.projectplus.co.nz/" target="_blank"><img src="../img/dl-projectplus.png" alt="projectplus_logo"></a>
+	        <a href="http://www.healthwisepersonnel.co.nz/" target="_blank"><img src="../img/dl-healthwise.png" alt="healthwise_logo"></a>
+	        <a href="http://www.freightwise.co.nz/index.php" target="_blank"class="mob-img-fr"><img src="../img/dl-freightwise.png" alt="freightwise_logo"></a>
+            <a href="https://www.alphajobs.co.nz/clients/contractor-management/" target="_blank"> <img src="../img/dl-alphacms.png" alt="alpha_cms_logo"></a>
+       </div>
+       <br>
+        <div id="copyright">
+            <p>© Copyright <%=DateTime.Now.Year%> Alpha Personnel Recriutment Ltd | 
+                <a  href="https://www.alphajobs.co.nz/privacy-policy" target="_blank" >Privacy Policy</a> | 
+                <a href="https://www.alphajobs.co.nz/terms-and-conditions" target="_blank">Terms & Condition</a>
+                | Technical Support: &nbsp;Ph: <a href="tel:+6495225702">(09) 522 5702</a> | 
+                E: <a href="mailto:reception@alphajobs.co.nz">support@alphajobs.co.nz</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../js/pageDone.js"></script>
+    <script>
+       
+
+        //$('#pageOne').click(function () {
+        //    if (confirm("If you have any changes to save on the current page. Press Cancel and click Continue button at the bottom of the page.") !== true) {
+        //        return false;
+        //    }
+        //});
+        //$('#pageTwo').click(function () {
+        //    if (confirm("If you have any changes to save on the current page. Press Cancel and click Continue button at the bottom of the page.") !== true) {
+        //        return false;
+        //    }
+        //});
+        //$('#pageThree').click(function () {
+        //    if (confirm("If you have any changes to save on the current page. Press Cancel and click Continue button at the bottom of the page.") !== true) {
+        //        return false;
+        //    }
+        //});
+        //$('#pageFour').click(function () {
+        //    if (confirm("If you have any changes to save on the current page. Press Cancel and click Continue button at the bottom of the page.") !== true) {
+        //        return false;
+        //    }
+        //});
+        //$('#pageFive').click(function () {
+        //    if (confirm("If you have any changes to save on the current page. Press Cancel and click Continue button at the bottom of the page.") !== true) {
+        //        return false;
+        //    }
+        //});
+
+    </script>
+</asp:Content>

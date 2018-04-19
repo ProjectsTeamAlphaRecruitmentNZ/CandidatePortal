@@ -1,0 +1,329 @@
+﻿.notifications-timesheet{margin: 5% auto 1% auto;width: 76%;font-size: 1.4rem;position: relative;color:#323241!important}
+
+.col{background-color:white;}
+
+.instraction{padding: 1.7rem 3rem;font-style: italic;font-size:1.4rem}
+.header-details{margin-top:2rem}
+.img-header {padding-top:0.4rem;position: absolute;}
+.header--title {display: inline;}
+h2{font-size: 2rem!important;}
+
+.pad-04{padding: 0.4rem 0;}
+.subheader{font-weight:bold;color:#3b3b3b!important;font-size: 1.35rem;}
+.datainfo{font-size: 1.35rem!important;color:#3b3b3b!important}
+.ml3{margin-left:3%;}
+.pb2{padding-bottom:2rem}
+.font-bold{font-weight:600}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size:1.35rem
+}
+
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    background: #eee;
+}
+
+.daybox{background-color: #eee;}
+
+#table-timesheetprint td, #table-timesheetprint th{text-align:center}
+#table-timesheetprint{table-layout:fixed;}
+.w5{width:5rem}
+.w20{width:20rem}
+.w85{width:8.5rem}
+
+.brdr-righ-none {border-right: transparent !important;}
+.brdr-left-none {border-left: transparent !important;}
+
+.border-button {border: 1px solid #0F52A3 !important;}
+
+.border-button:hover{background-color:#0F52A3!important;color:white}
+
+.btnTimesheet {
+    color: #333;
+    padding: 13px 10px!important;
+    width: 150px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 3px;
+    font: 0.7rem;
+    line-height: 0.9rem;
+    text-align: center;font-size:1.4rem;
+    cursor:pointer}
+    
+.btnTimesheet:hover{border:1.5px solid gray;}
+.pos-img{position: relative;top: 0.8rem;}
+
+.margin2{margin-top:2rem}
+
+.sp-span{position: absolute;
+left: 0rem;
+top: 1rem;
+}
+
+.text-align-right{text-align:right}
+#weekdaytable th{text-align:center;}
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table,thead, tbody, tfoot, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%;
+		height: 16px; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	#table-timesheetprint td:before{text-align: left;margin-left: 1rem;}
+	
+	tbody td:nth-of-type(1):before { content: "Date"; }
+	tbody td:nth-of-type(2):before { content: "Day"; }
+	tbody td:nth-of-type(3):before { content: "Start"; }
+	tbody td:nth-of-type(4):before { content: "Break Start"; }
+	tbody td:nth-of-type(5):before { content: "Break Finish"; }
+	tbody td:nth-of-type(6):before { content: "Finish"; }
+	tbody td:nth-of-type(7):before { content: "Day Total"; }
+	tbody td:nth-of-type(8):before { content: "Leave Reason"; }	
+	.text-align-mobile-center{text-align:center!important}
+	.text-align-mobile-left{text-align:left!important}
+	.height120-mobile{height:120px!important}
+	.width150-mobile{width:150px}
+	.mobile-calcbtn{position: absolute;top: -9.2rem;right: 0rem;}
+	.mobile-totalhours-input{position: absolute;top: -5.5rem;left: 7rem;}
+	.mobile--mt7{margin-top:-8rem;MARGIN-BOTTOM:0.5REM}
+	
+	tfoot td{padding-left:0!important}
+	#weekdaytable tfoot, #weekdaytable tfoot tr, #weekdaytable tfoot td {border: 1px solid #EDF1F5!important;background: #EDF1F5;}
+}
+
+/*------------------------------------------------------------------------*/
+
+#weekdaytable td, #weekdaytable th {text-align: center;}
+
+.button--primary {background-color: #25ae88 !important;color: #FFFFFF !important;}
+.btnTimesheet:hover{color:#333;}
+.border-button:hover{color:White!important}
+.width-button a {display:inline-block;width:150px}
+.no-table-background{border: 1px solid #EDF1F5!important;background: #EDF1F5;height: 10rem;}
+.no-table-background td{border: 1px solid #EDF1F5!important;}
+#weekdaytable tfoot td {border:1px solid white;}
+.calculatebuttontext{background-color: #25ae88 !important;color: #FFFFFF !important;padding: 12px 0;border: 1px solid #e9e9e9;border-radius: 3px;line-height: 0.9rem;text-align: center;}
+.calculatebuttontext:hover{border: 1px solid gray;}
+.comment-header{text-align:left;margin-left:0.5rem}
+
+.removetimeiconcontainer {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('../images/ui-icons_222222_256x240.png') no-repeat center center;
+}
+
+.uidayofleavebutton, .ui-icon {
+    border: none;
+    background: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.uidayofleavebutton {
+    padding: 5px 10px;
+    text-align: center !important;
+    cursor: pointer;
+}
+
+#hours_link {
+    background: none;
+    border: none;
+}
+
+
+/*#submit_link{
+	background: #2db156;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2db156), to(#1b9a42));
+    background-image: -webkit-linear-gradient(top, #2db156, #1b9a42); 
+    background-image: -moz-linear-gradient(top, #2db156, #1b9a42);
+    background-image: -ms-linear-gradient(top, #2db156, #1b9a42);
+    background-image: -o-linear-gradient(top, #2db156, #1b9a42);
+	border-color:#1b9a42;
+}*/
+#headerContent .button {
+    padding: 6px 8px;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.removetimeiconcontainer {
+    cursor: pointer;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+
+.checkiconcontainer.ui-corner-all, .checkiconcontainerunknown.ui-corner-all, .checkiconcontainererror.ui-corner-all {
+    cursor: default;
+    float: left;
+    position: relative;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+}
+
+.checkiconcontainer.ui-corner-all {
+    background: none repeat scroll 0 0 #017f28;
+}
+
+.checkiconcontainerunknown.ui-corner-all {
+    background: none repeat scroll 0 0 #ff6702;
+}
+
+.checkiconcontainererror.ui-corner-all {
+    background: none repeat scroll 0 0 #ce0a0a;
+}
+
+.checkiconcontainerunknown .ui-icon, .checkiconcontainer .ui-icon {
+    background-position: center center;
+}
+
+.uiinputtimecontainer {
+    float: left;
+    margin: 0 0;
+}
+
+#weekdaytable input[type=text] {
+    padding: 3px;
+    width: 60px;
+}
+
+.statemessage {
+    padding-left: 30px;
+    padding-top: 4px;
+}
+
+.validationtextvalid {
+    color: #017f28;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.validationtextunknown {
+    color: #ff6702;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.validationtexterror {
+    color: #ce0a0a;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #ccc !important;
+    color: #343434 !important;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+
+#hours_link.ui-state-default {
+    background: none !important;
+}
+
+.ui-icon-check.ui-icon {
+    background: url('../images/icons/icon-tick.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.ui-icon-help.ui-icon {
+    background: url('../images/icons/icon-incorrect.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.ui-icon-alert.ui-icon {
+    background: url('../images/icons/icon-error.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.calculatebuttontext.button.grey {
+    margin: 0;
+}
+
+.calculatebuttontext .icon {
+    background: url('../images/icons/icon_calculate.png') left center no-repeat;
+    padding: 2px 0 2px 25px;
+    display: inline-block;
+}
+
+.ui-state-hover {
+    color: #fff;
+}
+
+.uicopyhours:hover {
+    border: 1px solid #999999;
+    text-decoration: none;
+}
+
+.uicopyhours {
+    padding: 2px 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+.clearAll {
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+}
+
+    .clearAll:hover {
+        background-color: darkred;
+        border: solid 1px #000;
+        border-radius: 10px;
+    }

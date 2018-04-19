@@ -1,0 +1,11 @@
+.hiddenOverflow {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+}
+    .hiddenOverflow:hover {
+        overflow: visible;
+        white-space: normal;
+        height: auto;
+    }
